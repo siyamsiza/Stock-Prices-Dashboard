@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-seaborn
-matplotlib
-plotly
-yfinance
-warnings
