@@ -47,12 +47,12 @@ This Streamlit app provides real-time stock data from Yahoo Finance, allowing us
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/siyamsiza/stock-prices-dashboard.git
+   git clone https://github.com/siyamsiza/Stock-Prices-Dashboard.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd stock-prices-dashboard
+   cd Stock-Prices-Dashboard
    ```
 
 3. Install the required libraries:
