@@ -205,3 +205,6 @@ if page == 'Downloads':
         file_name=f"{selected_ticker}_stock_data.csv",
         mime='text/csv'
     )
+
+else:
+            st.write("Load stock data first in the Data Extraction page!")
