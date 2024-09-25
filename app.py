@@ -31,7 +31,8 @@ if page == 'Domain Knowledge':
     st.subheader("Background Information")
     st.write("A company's stock represents a portion of ownership in the company. More specifically, a stock (also referred to as equity) is a security that signifies partial ownership in a corporation, granting the shareholder a claim to a portion of the corporation's assets and profits proportional to the number of shares owned. Shares are individual units of stock.")
     st.write("Investors can buy stocks and later sell them. If the stock price rises, the investor makes a profit; if it falls, the investor incurs a loss. Stock prices are influenced by numerous factors, including the number of outstanding shares and the company’s projected future profits, making price determination complex. Stocks are traded continuously throughout the day, and the stock ticker is an ongoing report of the price of specific stocks, updated in real-time by various stock exchanges.")
-    
+else:
+            st.success("Explore the navigation for more information.")
     
 if page == 'Data Extraction':
    st.subheader("Data Extraction")
@@ -69,6 +70,8 @@ if page == 'Data Extraction':
    st.session_state['ticker_data'] = ticker_data
    st.session_state['selected_ticker'] = selected_ticker
    st.success(f"{selected_ticker} stock data has been succefully extracted.")
+else:
+            st.write("Load stock data of your choices first in the Data Extraction page.")
 
 
 if 'ticker_data' in st.session_state:
@@ -206,5 +209,3 @@ if page == 'Downloads':
         mime='text/csv'
     )
 
-else:
-            st.success("Load stock data first in the Data Extraction page!")
