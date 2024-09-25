@@ -207,4 +207,4 @@ if page == 'Downloads':
     )
 
 else:
-            st.write("Load stock data first in the Data Extraction page!")
+            st.success("Load stock data first in the Data Extraction page!")
