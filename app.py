@@ -40,8 +40,8 @@ if page == 'Data Extraction':
    data = {
     'Company': ['Apple Inc', 'Tesla, Inc', 'Microsoft Corporation', 'Amazon.com, Inc',
                 'Alphabet Inc. (Google)', 'Meta Platforms, Inc. (formerly Facebook)',
-                'JP Morgan Chase & Co.'],
-                'Netflix, Inc.', 'NVIDIA Corporation', 'Berkshire Hathaway Inc. (Class A)',
+                'JP Morgan Chase & Co.',
+                'Netflix, Inc.', 'NVIDIA Corporation', 'Berkshire Hathaway Inc. (Class A)'],
     'Ticker Symbol': ['AAPL', 'TSLA', 'MSFT', 'AMZN', 'GOOGL', 'META', 'NFLX', 'NVDA', 'BRK-A', 'JPM']}
 
 # Convert the dictionary to a DataFrame
