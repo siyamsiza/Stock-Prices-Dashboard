@@ -69,8 +69,6 @@ if page == 'Data Extraction':
    st.session_state['ticker_data'] = ticker_data
    st.session_state['selected_ticker'] = selected_ticker
    st.success(f"{selected_ticker} stock data has been succefully extracted.")
-else:
-            st.write("Load stock data of your choices first in the Data Extraction page.")
 
 
 if 'ticker_data' in st.session_state:
