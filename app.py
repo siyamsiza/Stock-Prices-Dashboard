@@ -178,9 +178,8 @@ if 'ticker_data' in st.session_state:
         corr_matrix = df_num.corr()
         st.write('### Heatmap: Correlations between Attributes')
         fig, ax = plt.subplots(figsize=(10, 8))
+        sns.heatmap(corr_matrix, cmap='coolwarm', annot=True)        
         st.pyplot(fig)        
-                
-        sns.heatmap(corr_matrix, cmap='coolwarm', annot=True)
         
         
         #performance metrics
