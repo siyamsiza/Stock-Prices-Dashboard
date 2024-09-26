@@ -42,8 +42,7 @@ if page == 'Data Extraction':
                 'Alphabet Inc. (Google)', 'Meta Platforms, Inc. (formerly Facebook)',
                 'JP Morgan Chase & Co.'],
                 'Netflix, Inc.', 'NVIDIA Corporation', 'Berkshire Hathaway Inc. (Class A)',
-    'Ticker Symbol': ['AAPL', 'TSLA', 'MSFT', 'AMZN', 'GOOGL', 'META', 'NFLX', 'NVDA', 'BRK-A', 'JPM']
-}
+    'Ticker Symbol': ['AAPL', 'TSLA', 'MSFT', 'AMZN', 'GOOGL', 'META', 'NFLX', 'NVDA', 'BRK-A', 'JPM']}
 
 # Convert the dictionary to a DataFrame
    df = pd.DataFrame(data)
