@@ -171,6 +171,15 @@ if 'ticker_data' in st.session_state:
         ax.set_title(f'{selected_ticker} Stock Price and Moving Average')
         ax.legend()
         st.pyplot(fig)
+
+        #Correlation matrix
+        df_num = ticker_data.drop(['Date', 'Dividends', 'Stock Splits'], axis=1)
+        corr_matrix = df_num.corr()
+        st.write('### Heatmap: Correlations between Attributes')
+        fig, ax = plt.subplots(figsize=(10, 8))
+        sns.heatmap(corr_matrix, cmap='coolwarm', annot=True)        
+        st.pyplot(fig)        
+        
         
         #performance metrics
         st.subheader("Performance Metrics")
